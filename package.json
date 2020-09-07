@@ -4,7 +4,7 @@
   "description": "A service to upload files to local directory.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Giuliana Silva Bezerra",

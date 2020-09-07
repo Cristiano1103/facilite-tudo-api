@@ -13,9 +13,10 @@ app.use(function(req, res, next) {
 
 app.use('/', routes);
 app.use(express.static('public'));
+var porta = process.env.PORT || 8080;
 
-const startServer = (port = 7755) => {
-    const server = app.listen(port, function () {
+const startServer = () => {
+    const server = app.listen(porta, function () {
       console.log(`Server running on port ${server.address().port}`);
     });
 };
